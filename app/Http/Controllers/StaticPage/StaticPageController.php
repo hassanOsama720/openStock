@@ -11,7 +11,7 @@ class StaticPageController extends Controller
 {
     public function index(): JsonResponse
     {
-        return response()->json(StaticPageResource::collection(StaticPage::all()));
+        return "Hello";
     }
 
     public function show($slug): JsonResponse
