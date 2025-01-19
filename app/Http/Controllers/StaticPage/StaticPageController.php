@@ -11,7 +11,7 @@ class StaticPageController extends Controller
 {
     public function index(): JsonResponse
     {
-        return "Hello";
+        return response()->json(["Key" => "Hello"]);
     }
 
     public function show($slug): JsonResponse
